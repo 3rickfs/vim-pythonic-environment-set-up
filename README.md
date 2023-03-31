@@ -10,3 +10,5 @@ I've added some features:
 - Remap **Esc** to **jk** This actually helps get you more confortable and faster. 
 
 Next new feature could be to open jupyter notebooks.
+
+Feel free to contribute to this project requesting a PR from your new feature's branch. 
