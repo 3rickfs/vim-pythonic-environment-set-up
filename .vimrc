@@ -131,3 +131,16 @@ nnoremap <C-t> :terminal<CR>
 
 "remap escape
 inoremap jk <Esc>
+
+" transparent bg
+autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
+" For Vim<8, replace EndOfBuffer by NonText
+autocmd vimenter * hi EndOfBuffer guibg=NONE ctermbg=NONE
+
+"hi Normal guibg=NONE ctermbg=NONE
+
+"changing split windows size
+nmap <M-Right> :vertical resize +1<CR>
+nmap <M-Left> :vertical resize -1<CR>
+nmap <M-Down> :resize +1<CR>
+nmap <M-Up> :resize -1<CR>
