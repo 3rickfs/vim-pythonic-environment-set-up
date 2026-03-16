@@ -52,6 +52,12 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set softtabstop=2
     \ set shiftwidth=2
 
+"For bash files
+au BufNewFile,BufRead *.sh
+    \ set tabstop=3
+    \ set softtabstop=3
+    \ set shiftwidth=3
+
 "Auto-indentation
 Plugin 'vim-scripts/indentpython.vim'
 
