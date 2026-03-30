@@ -30,12 +30,20 @@ cp ./vim-pythonic-environment-set-up /home/username/
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 ### 4) Compile YouCompleMe
+UBUNTU
 ```
 sudo apt install build-essential cmake vim-nox python3-dev
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
 echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_current.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
 sudo apt install mono-complete golang nodejs openjdk-17-jdk openjdk-17-jre npm
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --clangd-completer
+```
+FEDORA
+```
+sudo dnf install python3-devel
+sudo dnf install @development-tools cmake mono-complete golang nodejs java-21-openjdk java-21-openjdk-devel npm vim-enhanced llvm clang clang-tools-extra
 cd ~/.vim/bundle/YouCompleteMe
 python3 install.py --clangd-completer
 ```
