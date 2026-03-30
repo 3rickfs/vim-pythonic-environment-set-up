@@ -132,6 +132,12 @@ noremap <C-w>m :MaximizerToggle<CR>
 "running the code with a snap
 nnoremap py :!python %
 
+"search class
+nnoremap sc :g/^class
+
+"search def 
+nnoremap sd :g/^def
+
 "integrated terminal macros
 nnoremap <C-t> :terminal<CR>
 
